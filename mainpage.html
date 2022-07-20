@@ -20,8 +20,11 @@
         color: white;
         display: flex;
         text-align: center;
-        justify-content: space-evenly;
-        padding: 20px 5%;
+        justify-content: space-around;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
         align-items: center;
     }
     
@@ -29,15 +32,15 @@
     #navbar>div>img,
     #bottom>div>img {
         background-color: #172132;
-        ;
     }
     
     #icons {
         background-color: #172132;
-        width: 60%;
+        width: 40%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        margin-right: 30px;
     }
     
     #icons>div {
@@ -112,6 +115,7 @@
         margin: auto;
         justify-content: space-between;
         background-color: white;
+        font-weight: bold;
     }
     
     #newsblock {
@@ -147,16 +151,10 @@
 
 <body>
     <div id="navbar">
-        <div>
+        <div style="margin-left: 15px;">
             <img src="https://www.cricket.com/cricket.com.svg" alt="">
         </div>
         <div id="icons">
-            <div>
-                <img src="https://www.cricket.com/svgs/icons/frc.svg" alt=""> Fantasy Centre
-            </div>
-            <div>
-                <img src="https://www.cricket.com/svgs/icons/criclytics-icon.svg" alt=""> Criclytics
-            </div>
             <div>
                 <img src="https://www.cricket.com/svgs/icons/schedule-icon.svg" alt=""> Schedule
             </div>
@@ -246,8 +244,8 @@
         </div>
         <hr>
         <div id="newsblock">
-            <div>
-                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658283271912?auto=compress&dpr=2&w=1&h=200" alt="">
+            <div style="border-bottom-left-radius: 10px ;">
+                <img style="border-bottom-left-radius: 10px ;" width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658283271912?auto=compress&dpr=2&w=1&h=200" alt="">
             </div>
             <div>
                 <h3>Van der Dussen stars as South Africa deny Stokes a farewell ODI win</h3>
