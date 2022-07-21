@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The best of cricket</title>
+    <title>Latest cricket news and articles</title>
 </head>
 <style>
     * {
@@ -36,32 +37,70 @@
     
     #icons {
         background-color: #172132;
+        height: 100%;
         width: 40%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-right: 30px;
+        /* border: 1px solid red; */
     }
     
     #icons>div {
         background-color: #172132;
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
     
     #icons>div>img {
         background-color: #172132;
         margin: auto;
-        width: 20px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
         margin-top: 5px;
-        margin-bottom: -2px;
+        margin-bottom: 10px;
     }
-    /* This is the part with the main page styling */
     
-    #slider>img {
+    #icons>div:nth-child(4) {
+        border-bottom: 3px solid red;
+    }
+    /* Main content editing */
+    
+    #active {
+        background: rgb(157, 2, 14);
+        background: linear-gradient(135deg, rgba(157, 2, 14, 1) 0%, rgba(210, 62, 47, 1) 100%);
+        color: white;
+        width: 140px;
+        height: 34px;
+        text-align: center;
+        border: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    
+    button {
+        width: 140px;
+        height: 34px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    
+    #heading-buttons {
+        margin: 120px auto 10px auto;
+        width: 74%;
+        /* border: 1px solid red; */
+    }
+    
+    #heading-buttons>div {
+        /* border: 1px solid red; */
         width: 100%;
-        margin-top: 85px;
+        display: flex;
+        justify-content: space;
     }
     
     #newsflash {
@@ -80,6 +119,12 @@
         justify-content: space-between;
         background-color: white;
         font-weight: bold;
+    }
+    
+    #news {
+        width: 75%;
+        margin: 0 auto;
+        background-color: white;
     }
     
     #newsblock {
@@ -109,7 +154,7 @@
     p {
         background-color: white;
     }
-    /* main page styling ends */
+    /* Main content editing ends here */
     
     #bottom {
         background-color: #172132;
@@ -147,8 +192,6 @@
     }
 </style>
 
-
-
 <body>
     <div id="navbar">
         <div style="margin-left: 15px;">
@@ -178,16 +221,18 @@
             </div>
         </div>
     </div>
-    <!-- Main content of the website starts here -->
-    <div id="slider">
-        <img src="./screenshot (14).png" alt="">
-    </div>
-    <div id="newsflash">
-        <div id="heading">
-            <p>NEWS AND ARTICLES</p>
-            <p>></p>
+    <!-- Main content here -->
+    <div id="heading-buttons">
+        <h1>News & Articles</h1>
+        <div>
+            <button id="active">LATEST</button>
+            <button>NEWS</button>
+            <button>ON THIS DAY</button>
+            <button>MATCH RELATED</button>
+            <button>FEATURES</button>
         </div>
-        <hr>
+    </div>
+    <div id="news">
         <div id="newsblock">
             <div>
                 <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658330194138?auto=compress&dpr=2&w=1&h=200" alt="">
@@ -244,8 +289,8 @@
         </div>
         <hr>
         <div id="newsblock">
-            <div style="border-bottom-left-radius: 10px ;">
-                <img style="border-bottom-left-radius: 10px ;" width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658283271912?auto=compress&dpr=2&w=1&h=200" alt="">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658283271912?auto=compress&dpr=2&w=1&h=200" alt="">
             </div>
             <div>
                 <h3>Van der Dussen stars as South Africa deny Stokes a farewell ODI win</h3>
@@ -253,8 +298,74 @@
                 <p id="time">AFP</p>
             </div>
         </div>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658314125775?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>We are trying to find right mindset for ODI cricket: Pooran</h3>
+                <p>Pooran also said that beating India could send out a strong message</p>
+                <p id="time">criket.com staff</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658285237015?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>We're probably moving through a bit of a transition phase: Buttler</h3>
+                <p>England lost the T20I and ODI series against India and were now outplayed by the Proteas on Tuesday</p>
+                <p id="time">cricket.com staff</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658231853797?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>Graeme Smith appointed as Commissioner of CSA's new T20 league</h3>
+                <p>The 41-year-old will oversee both the cricketing and non-cricketing aspects of the tournament</p>
+                <p id="time">cricket.com staff</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658230163436?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>Former SC judge Vineet Saran appointed BCCI ethics officer</h3>
+                <p>He succeeds Justice (Retd) D K Jain, whose term ended in June last year</p>
+                <p id="time">PTI</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658226963308?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>If I had about 20 minutes with Kohli, I might help him: Gavaskar</h3>
+                <p>Kohli could only manage 76 runs in six innings across formats in England</p>
+                <p id="time">cricket.com staff</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658224608403?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>Hussain slams scheduling, says its "madness for players"</h3>
+                <p>The former captain wrote in his column for Sky Sports a day after Ben Stokes decided to retire from ODI cricket</p>
+                <p id="time">cricket.com staff</p>
+            </div>
+        </div>
     </div>
-    <!-- Ends here -->
+
+    <!-- Main content ends here -->
     <div id="bottom">
         <div>
             <img src="https://www.cricket.com/cricket.com.svg" alt=""> Cricket like never before
@@ -269,6 +380,5 @@
         </div>
     </div>
 </body>
-
 
 </html>
