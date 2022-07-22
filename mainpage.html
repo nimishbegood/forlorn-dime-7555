@@ -1,0 +1,274 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The best of cricket</title>
+</head>
+<style>
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #E8E9EF;
+    }
+    
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #172132;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    
+    #navbar>div,
+    #navbar>div>img,
+    #bottom>div>img {
+        background-color: #172132;
+    }
+    
+    #icons {
+        background-color: #172132;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 30px;
+    }
+    
+    #icons>div {
+        background-color: #172132;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #icons>div>img {
+        background-color: #172132;
+        margin: auto;
+        width: 20px;
+        height: 22px;
+        margin-top: 5px;
+        margin-bottom: -2px;
+    }
+    /* This is the part with the main page styling */
+    
+    #slider>img {
+        width: 100%;
+        margin-top: 85px;
+    }
+    
+    #newsflash {
+        width: 75%;
+        margin: 20px auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        height: auto;
+        background-color: white;
+    }
+    
+    #heading {
+        display: flex;
+        width: 96%;
+        margin: auto;
+        justify-content: space-between;
+        background-color: white;
+        font-weight: bold;
+    }
+    
+    #newsblock {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        /* border: 1px solid teal; */
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    #newsblock>div:last-child {
+        /* border: 1px solid teal; */
+        margin-left: 10px;
+        background-color: white;
+        /* padding: 4px; */
+    }
+    
+    #time {
+        text-align: left;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: white;
+    }
+    
+    h3,
+    p {
+        background-color: white;
+    }
+    /* main page styling ends */
+    
+    #bottom {
+        background-color: #172132;
+        display: flex;
+        padding: 20px 13%;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    #bottom>div:first-child {
+        background-color: #172132;
+        font-size: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #bottom>div:nth-child(2) {
+        background-color: #172132;
+        width: 30%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    #bottom>div:nth-child(2)>p {
+        background-color: #172132;
+    }
+    
+    #bottom>:last-child {
+        background-color: #172132;
+    }
+</style>
+
+
+
+<body>
+    <div id="navbar">
+        <div style="margin-left: 15px;">
+            <img src="https://www.cricket.com/cricket.com.svg" alt="">
+        </div>
+        <div id="icons">
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/criclytics-icon.svg" alt="">Criclytics
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/series-icon.svg" alt=""> Series
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/news-and-articles-icon.svg" alt=""> News
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/video-icon.svg" alt=""> Videos
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/players-icon.svg" alt=""> Players
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/teams-icon.svg" alt=""> Teams
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/more.svg" alt=""> More
+            </div>
+        </div>
+    </div>
+    <!-- Main content of the website starts here -->
+    <div id="slider">
+        <img src="./screenshot (14).png" alt="">
+    </div>
+    <div id="newsflash">
+        <div id="heading">
+            <p>NEWS AND ARTICLES</p>
+            <p>></p>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658330194138?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>Gritty Cheteshwar Pujara’s double ton show at Lord’s</h3>
+                <p>Pujara is only behind Duckett and Masood in most runs scored in the second division</p>
+                <p id="time">Aakash Sivasubramaniam</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658221584989?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>Ben Stokes: A career riddled with setbacks that fueled roaring comebacks</h3>
+                <p>The bad boy of England cricket who inspired a generation was the catalyst behind their resurgence post a dismal 2015 World Cup</p>
+                <p id="time">Shweta Haranhalli</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658309427290?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>IPL franchises bag all six teams in CSA's new T20 league</h3>
+                <p>29 expressed interest to buy a franchise but it is eventually the IPL team owners who were able to rule over the proceedings</p>
+                <p id="time">cricket.com staff</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658328626660?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>Only matter of time before Kohli rebounds and responds: Ponting</h3>
+                <p>Ricky Ponting was quick to back out-of-form Kohli to come out of his slump</p>
+                <p id="time">cricket.com staff</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div>
+                <img width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658153231332?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>ODI cricket is losing its relevance — Stokes’ retirement all but confirms it</h3>
+                <p>It does feel like the format is falling apart because at this point, there seems to be no incentive for players to pursue it</p>
+                <p id="time">Anirudh Suresh</p>
+            </div>
+        </div>
+        <hr>
+        <div id="newsblock">
+            <div style="border-bottom-left-radius: 10px ;">
+                <img style="border-bottom-left-radius: 10px ;" width="400px" height="200px" src="https://images-cricketcom.imgix.net/news-1658283271912?auto=compress&dpr=2&w=1&h=200" alt="">
+            </div>
+            <div>
+                <h3>Van der Dussen stars as South Africa deny Stokes a farewell ODI win</h3>
+                <p>Thr right-hander smashed a stunning century to help Proteas win the first ODI by 62 runs</p>
+                <p id="time">AFP</p>
+            </div>
+        </div>
+    </div>
+    <!-- Ends here -->
+    <div id="bottom">
+        <div>
+            <img src="https://www.cricket.com/cricket.com.svg" alt=""> Cricket like never before
+        </div>
+        <div>
+            <p>Terms of use</p>
+            <p>Privacy Policy</p>
+            <p>Cookies Policy</p>
+        </div>
+        <div>
+            @ 2020 cricket.com | All rights reserved
+        </div>
+    </div>
+</body>
+
+
+</html>
