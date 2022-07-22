@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criclytics</title>
+</head>
+<style>
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #E8E9EF;
+    }
+    
+    #navbar {
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #172132;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    
+    #navbar>div,
+    #navbar>div>img,
+    #bottom>div>img {
+        background-color: #172132;
+    }
+    
+    #icons {
+        background-color: #172132;
+        height: 100%;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 30px;
+        /* border: 1px solid red; */
+    }
+    
+    #icons>div {
+        background-color: #172132;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    #icons>div>img {
+        background-color: #172132;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #icons>div:first-child {
+        border-bottom: 3px solid red;
+    }
+    /* Main content editing */
+    
+    .slideshow-container {
+        width: 75%;
+        margin: 120px auto 0 auto;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 7px;
+        width: 7px;
+        margin: -10px 2px 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+    
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    #cardBlock {
+        width: 75%;
+        margin: auto;
+    }
+    
+    #bar {
+        height: 50px;
+        width: 100%;
+        text-align: left;
+        background-color: #172132;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    #bar>h3 {
+        background-color: #172132;
+        margin-left: 10px;
+    }
+    
+    #flexUpcoming {
+        border: 1px solid red;
+        width: 30%;
+    }
+    /* Main content editing ends here */
+    
+    #bottom {
+        background-color: #172132;
+        display: flex;
+        padding: 20px 13%;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    #bottom>div:first-child {
+        background-color: #172132;
+        font-size: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #bottom>div:nth-child(2) {
+        background-color: #172132;
+        width: 30%;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    #bottom>div:nth-child(2)>p {
+        background-color: #172132;
+    }
+    
+    #bottom>:last-child {
+        background-color: #172132;
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <div style="margin-left: 15px;">
+            <img src="https://www.cricket.com/cricket.com.svg" alt="">
+        </div>
+        <div id="icons">
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/criclytics-icon.svg" alt="">Criclytics
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/series-icon.svg" alt=""> Series
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/news-and-articles-icon.svg" alt=""> News
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/video-icon.svg" alt=""> Videos
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/players-icon.svg" alt=""> Players
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/teams-icon.svg" alt=""> Teams
+            </div>
+            <div>
+                <img src="https://www.cricket.com/svgs/icons/more.svg" alt=""> More
+            </div>
+        </div>
+    </div>
+    <!-- Main content for the website is here -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./screenshot.png" style="width:100%; height: 190.63px">
+        </div>
+        <div class="mySlides fade">
+            <img src="./2.png" style="width:100%; height: 190.63px">
+        </div>
+        <div class="mySlides fade">
+            <img src="./3.png" style="width:100%; height: 190.63px">
+        </div>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div id="cardBlock">
+        <div id="bar">
+            <h3>UPCOMING</h3>
+        </div>
+        <div id="flexUpcoming">
+            <div>
+                <p>1st ODI - India tour of West Indies, 2022</p>
+                <hr>
+                <div>
+                    <p><img width="27.2px" height="16px" src="https://images.cricket.com/teams/9_flag.png" alt="">WI</p>
+                    <p><img width="27.2px" height="16px" src="https://images.cricket.com/teams/4_flag.png" alt="">IND</p>
+                </div>
+                <div>7 hrs 11 mins to toss</div>
+            </div>
+        </div>
+        <div id="bar">
+            <h3>COMPLETED</h3>
+        </div>
+        <div id="flexCompleted"></div>
+    </div>
+    <!-- Main content ends here -->
+    <div id="bottom">
+        <div>
+            <img src="https://www.cricket.com/cricket.com.svg" alt=""> Cricket like never before
+        </div>
+        <div>
+            <p>Terms of use</p>
+            <p>Privacy Policy</p>
+            <p>Cookies Policy</p>
+        </div>
+        <div>
+            @ 2020 cricket.com | All rights reserved
+        </div>
+    </div>
+</body>
+<script>
+    let index = 0;
+    slide();
+
+    function slide() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dot = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        index++;
+        if (index > slides.length) {
+            index = 1;
+        }
+        for (i = 0; i < dot.length; i++) {
+            dot[i].className = dot[i].className.replace(" active", "");
+        }
+        slides[index - 1].style.display = "block";
+        dot[index - 1].className += " active";
+        setTimeout(slide, 1500); // Change image every 2 seconds
+    }
+</script>
+
+</html>
