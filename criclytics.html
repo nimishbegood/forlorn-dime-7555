@@ -124,8 +124,160 @@
     }
     
     #flexUpcoming {
-        border: 1px solid red;
-        width: 30%;
+        background-color: white;
+        /* border: 1px solid red; */
+        margin: auto;
+        height: auto;
+        padding: 8px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #card:hover,
+    #card2:hover {
+        transform: scale(1.06);
+        transition: transform .2s;
+    }
+    
+    #card {
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+        padding: 8px;
+        width: 304px;
+        height: 156.719px;
+    }
+    
+    .heading {
+        background-color: white;
+        /* border: 1px solid teal; */
+        height: 27.583px;
+        width: 256px;
+        font-size: 14px;
+        color: grey;
+        padding-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .heading2 {
+        background-color: white;
+        /* border: 1px solid teal; */
+        height: 27.583px;
+        width: 100%;
+        font-size: 16px;
+        color: grey;
+        padding-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    #grid {
+        background-color: white;
+        width: 288px;
+        height: auto;
+        /* padding: 8px 0; */
+        /* border: 1px solid teal; */
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+    
+    #grid>div {
+        background-color: white;
+        /* border: 1px solid red; */
+        width: 114.802px;
+        height: 32.094px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #timeToToss {
+        display: flex;
+        padding: 4px 8px;
+        background-color: #F16A3633;
+        width: 125.354px;
+        height: 11.948px;
+        border-radius: 1rem;
+        font-size: .65rem;
+        align-items: center;
+        margin-top: 5px;
+        justify-content: center;
+    }
+    
+    #flexCompleted {
+        background-color: white;
+        padding-top: 10px;
+        height: auto;
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+    }
+    
+    #flexCompleted2 {
+        background-color: white;
+        padding-top: 10px;
+        height: auto;
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: space-evenly;
+    }
+    
+    #grid2 {
+        background-color: white;
+        width: 288px;
+        height: auto;
+        grid-row-gap: 10px;
+        /* padding: 8px 0; */
+        /* border: 1px solid teal; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-evenly;
+    }
+    
+    #grid2>div {
+        background-color: white;
+        /* border: 1px solid red; */
+        width: 55%;
+        height: 32.094px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 4px;
+    }
+    
+    .span {
+        background-color: white;
+        margin: 0 4px;
+    }
+    
+    #card2 {
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+        width: 453.115px;
+        height: 180px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+    
+    #card3 {
+        background-color: white;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+        width: 453.115px;
+        height: 180px;
+        margin-bottom: 16px;
+        padding: 8px;
     }
     /* Main content editing ends here */
     
@@ -167,17 +319,19 @@
 
 <body>
     <div id="navbar">
-        <div style="margin-left: 15px;">
-            <img src="https://www.cricket.com/cricket.com.svg" alt="">
-        </div>
+        <a id="mainpage" href="./mainpage.html">
+            <div style="background-color: #172132;">
+                <img style="background-color:#172132;" src="https://www.cricket.com/cricket.com.svg" alt="">
+            </div>
+        </a>
         <div id="icons">
-            <div>
+            <div id="cric">
                 <img src="https://www.cricket.com/svgs/icons/criclytics-icon.svg" alt="">Criclytics
             </div>
             <div>
                 <img src="https://www.cricket.com/svgs/icons/series-icon.svg" alt=""> Series
             </div>
-            <div>
+            <div id="new">
                 <img src="https://www.cricket.com/svgs/icons/news-and-articles-icon.svg" alt=""> News
             </div>
             <div>
@@ -186,7 +340,7 @@
             <div>
                 <img src="https://www.cricket.com/svgs/icons/players-icon.svg" alt=""> Players
             </div>
-            <div>
+            <div id="team">
                 <img src="https://www.cricket.com/svgs/icons/teams-icon.svg" alt=""> Teams
             </div>
             <div>
@@ -216,20 +370,124 @@
             <h3>UPCOMING</h3>
         </div>
         <div id="flexUpcoming">
-            <div>
-                <p>1st ODI - India tour of West Indies, 2022</p>
-                <hr>
-                <div>
-                    <p><img width="27.2px" height="16px" src="https://images.cricket.com/teams/9_flag.png" alt="">WI</p>
-                    <p><img width="27.2px" height="16px" src="https://images.cricket.com/teams/4_flag.png" alt="">IND</p>
+            <div id="card">
+                <div class="heading">
+                    Match 26 - Tamil Nadu Premier League, 2022
                 </div>
-                <div>7 hrs 11 mins to toss</div>
+                <hr>
+                <div id="grid">
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/1525_flag.png" alt=""> LKK
+                    </div>
+                    <div>
+                        23rd July
+                    </div>
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/2675_flag.png" alt=""> NRK
+                    </div>
+                    <div>
+                        7:15 PM
+                    </div>
+                </div>
+                <div id="timeToToss">5 hrs 47 mins to Toss</div>
+            </div>
+            <div id="card">
+                <div class="heading">
+                    2nd T20I - South Africa Women tour of England, 2022
+                </div>
+                <hr>
+                <div id="grid">
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/1121_flag.png" alt=""> EN-W
+                    </div>
+                    <div>
+                        23rd July
+                    </div>
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/1131_flag.png" alt=""> SA-W
+                    </div>
+                    <div>
+                        7:00 PM
+                    </div>
+                </div>
+                <div id="timeToToss">4 hrs 45 mins to Toss</div>
+            </div>
+            <div id="card">
+                <div class="heading">
+                    Match 5 - Australia Women and Pakistan Women tour of Ireland, 2022
+                </div>
+                <hr>
+                <div id="grid">
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/1130_flag.png" alt=""> PK-W
+                    </div>
+                    <div>
+                        23rd July
+                    </div>
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/1119_flag.png" alt=""> AU-W
+                    </div>
+                    <div>
+                        8:30 PM
+                    </div>
+                </div>
+                <div id="timeToToss">5 hrs 47 mins to Toss</div>
             </div>
         </div>
         <div id="bar">
             <h3>COMPLETED</h3>
         </div>
-        <div id="flexCompleted"></div>
+        <div id="flexCompleted">
+            <div id="card2">
+                <div class="heading">
+                    1st ODI - India tour of West Indies, 2022
+                </div>
+                <hr>
+                <div id="grid2">
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/4_flag.png" alt=""> <span class="span">IND</span> <span class="span">308/7</span> <span class="span">(50.0)</span>
+                    </div>
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/9_flag.png" alt=""> <span class="span">WI</span> <span class="span">305/6</span> <span class="span">(50.0)</span>
+                    </div>
+                </div>
+                <div id="timeToToss">India won by 3 runs</div>
+            </div>
+            <div id="card2">
+                <div class="heading2">
+                    2nd ODI - South Africa tour of England, 2022
+                </div>
+                <hr>
+                <div id="grid2">
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/3_flag.png" alt=""> <span class="span">ENG</span> <span class="span">201</span> <span class="span">(28.1)</span>
+                    </div>
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/7_flag.png" alt=""> <span class="span">SA</span> <span class="span">83</span> <span class="span">(20.4)</span>
+                    </div>
+                </div>
+                <div id="timeToToss">ENG won by 118 runs</div>
+            </div>
+        </div>
+        <div id="flexCompleted2">
+            <div id="card2">
+                <div class="heading2">
+                    3rd T20I - New Zealand tour of Ireland, 2022
+                </div>
+                <hr>
+                <div id="grid2">
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/13_flag.png" alt=""> <span class="span">IRE</span> <span class="span">174/6</span> <span class="span">(20.0)</span>
+                    </div>
+                    <div>
+                        <img width="27.2px" height="16px" src="https://images.cricket.com/teams/5_flag.png" alt=""> <span class="span">NZ</span> <span class="span">180/4</span> <span class="span">(19.0)</span>
+                    </div>
+                </div>
+                <div id="timeToToss">NZ won by 6 wickets</div>
+            </div>
+            <div id="card3">
+            </div>
+        </div>
     </div>
     <!-- Main content ends here -->
     <div id="bottom">
@@ -266,7 +524,16 @@
         }
         slides[index - 1].style.display = "block";
         dot[index - 1].className += " active";
-        setTimeout(slide, 1500); // Change image every 2 seconds
+        setTimeout(slide, 1200);
+    }
+    document.getElementById("cric").onclick = function() {
+        location.href = "./criclytics.html";
+    }
+    document.getElementById("team").onclick = function() {
+        location.href = "./teams.html";
+    }
+    document.getElementById("new").onclick = function() {
+        location.href = "./newspage.html";
     }
 </script>
 

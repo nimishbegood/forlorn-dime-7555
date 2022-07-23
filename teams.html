@@ -14,6 +14,7 @@
     }
     
     #navbar {
+        z-index: 10;
         position: fixed;
         top: 0;
         width: 100%;
@@ -27,6 +28,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
         align-items: center;
+        z-index: 10;
     }
     
     #navbar>div,
@@ -71,32 +73,30 @@
         padding-top 20px;
         text-align: center;
         background-color: white;
-        width: 80%;
+        width: 989.2px;
         margin: 120px auto 10px auto;
         /* border: 1px solid red; */
     }
     
     #men-grid {
-        padding-left: 10px;
         /* border: 1px solid red; */
         height: auto;
         display: grid;
-        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+        grid-template: 30% 30% 30% / 22.5% 22.5% 22.5% 22.5%;
         background-color: white;
         grid-row-gap: 20px;
-        grid-column-gap: 20px;
+        justify-content: space-evenly;
     }
     
     #women-grid {
-        width: 100%;
-        padding-left: 10px;
+        width: 989.2px;
         /* border: 1px solid red; */
         height: auto;
         display: grid;
-        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+        grid-template: 45% 45% / 22.5% 22.5% 22.5% 22.5%;
         background-color: white;
+        justify-content: space-evenly;
         grid-row-gap: 20px;
-        grid-column-gap: 20px;
     }
     
     #men-grid>div>h2,
@@ -116,6 +116,12 @@
         flex-direction: column;
         justify-content: space-around;
         background-color: white;
+    }
+    
+    #men-grid>div:hover,
+    #women-grid>div:hover {
+        transform: scale(1.06);
+        transition: transform .2s;
     }
     /* Main content editing ends here */
     
@@ -157,17 +163,19 @@
 
 <body>
     <div id="navbar">
-        <div style="margin-left: 15px;">
-            <img src="https://www.cricket.com/cricket.com.svg" alt="">
-        </div>
+        <a id="mainpage" href="./mainpage.html">
+            <div style="background-color: #172132;">
+                <img style="background-color:#172132;" src="https://www.cricket.com/cricket.com.svg" alt="">
+            </div>
+        </a>
         <div id="icons">
-            <div>
+            <div id="cric">
                 <img src="https://www.cricket.com/svgs/icons/criclytics-icon.svg" alt="">Criclytics
             </div>
             <div>
                 <img src="https://www.cricket.com/svgs/icons/series-icon.svg" alt=""> Series
             </div>
-            <div>
+            <div id="news">
                 <img src="https://www.cricket.com/svgs/icons/news-and-articles-icon.svg" alt=""> News
             </div>
             <div>
@@ -176,7 +184,7 @@
             <div>
                 <img src="https://www.cricket.com/svgs/icons/players-icon.svg" alt=""> Players
             </div>
-            <div>
+            <div id="team">
                 <img src="https://www.cricket.com/svgs/icons/teams-icon.svg" alt=""> Teams
             </div>
             <div>
@@ -289,5 +297,16 @@
         </div>
     </div>
 </body>
+<script>
+    document.getElementById("cric").onclick = function() {
+        location.href = "./criclytics.html";
+    }
+    document.getElementById("team").onclick = function() {
+        location.href = "./teams.html";
+    }
+    document.getElementById("news").onclick = function() {
+        location.href = "./newspage.html";
+    }
+</script>
 
 </html>
