@@ -13,6 +13,7 @@
     }
     
     #navbar {
+        z-index: 10;
         position: fixed;
         top: 0;
         width: 100%;
@@ -36,32 +37,39 @@
     
     #icons {
         background-color: #172132;
+        height: 100%;
         width: 40%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-right: 30px;
+        /* border: 1px solid red; */
     }
     
     #icons>div {
         background-color: #172132;
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
     
     #icons>div>img {
         background-color: #172132;
         margin: auto;
-        width: 20px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
         margin-top: 5px;
-        margin-bottom: -2px;
+        margin-bottom: 10px;
+    }
+    
+    #icons>div:nth-child(3) {
+        border-bottom: 3px solid red;
     }
     /* This is the part with the main page styling */
     
     #slider>img {
         width: 100%;
-        margin-top: 85px;
+        margin-top: 100px;
     }
     
     #newsflash {
@@ -151,17 +159,19 @@
 
 <body>
     <div id="navbar">
-        <div style="margin-left: 15px;">
-            <img src="https://www.cricket.com/cricket.com.svg" alt="">
-        </div>
+        <a id="mainpage" href="./mainpage.html">
+            <div style="background-color: #172132;">
+                <img style="background-color:#172132;" src="https://www.cricket.com/cricket.com.svg" alt="">
+            </div>
+        </a>
         <div id="icons">
-            <div>
+            <div id="cric">
                 <img src="https://www.cricket.com/svgs/icons/criclytics-icon.svg" alt="">Criclytics
             </div>
             <div>
                 <img src="https://www.cricket.com/svgs/icons/series-icon.svg" alt=""> Series
             </div>
-            <div>
+            <div id="news">
                 <img src="https://www.cricket.com/svgs/icons/news-and-articles-icon.svg" alt=""> News
             </div>
             <div>
@@ -170,7 +180,7 @@
             <div>
                 <img src="https://www.cricket.com/svgs/icons/players-icon.svg" alt=""> Players
             </div>
-            <div>
+            <div id="team">
                 <img src="https://www.cricket.com/svgs/icons/teams-icon.svg" alt=""> Teams
             </div>
             <div>
@@ -180,7 +190,7 @@
     </div>
     <!-- Main content of the website starts here -->
     <div id="slider">
-        <img src="./screenshot (14).png" alt="">
+        <img src="./slider.png" alt="">
     </div>
     <div id="newsflash">
         <div id="heading">
@@ -269,6 +279,16 @@
         </div>
     </div>
 </body>
-
+<script>
+    document.getElementById("cric").onclick = function() {
+        location.href = "./criclytics.html";
+    }
+    document.getElementById("team").onclick = function() {
+        location.href = "./teams.html";
+    }
+    document.getElementById("news").onclick = function() {
+        location.href = "./newspage.html";
+    }
+</script>
 
 </html>
