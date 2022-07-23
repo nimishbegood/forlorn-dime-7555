@@ -319,17 +319,19 @@
 
 <body>
     <div id="navbar">
-        <div style="margin-left: 15px;">
-            <img src="https://www.cricket.com/cricket.com.svg" alt="">
-        </div>
+        <a id="mainpage" href="./mainpage.html">
+            <div style="background-color: #172132;">
+                <img style="background-color:#172132;" src="https://www.cricket.com/cricket.com.svg" alt="">
+            </div>
+        </a>
         <div id="icons">
-            <div>
+            <div id="cric">
                 <img src="https://www.cricket.com/svgs/icons/criclytics-icon.svg" alt="">Criclytics
             </div>
             <div>
                 <img src="https://www.cricket.com/svgs/icons/series-icon.svg" alt=""> Series
             </div>
-            <div>
+            <div id="new">
                 <img src="https://www.cricket.com/svgs/icons/news-and-articles-icon.svg" alt=""> News
             </div>
             <div>
@@ -338,7 +340,7 @@
             <div>
                 <img src="https://www.cricket.com/svgs/icons/players-icon.svg" alt=""> Players
             </div>
-            <div>
+            <div id="team">
                 <img src="https://www.cricket.com/svgs/icons/teams-icon.svg" alt=""> Teams
             </div>
             <div>
@@ -523,6 +525,15 @@
         slides[index - 1].style.display = "block";
         dot[index - 1].className += " active";
         setTimeout(slide, 1200);
+    }
+    document.getElementById("cric").onclick = function() {
+        location.href = "./criclytics.html";
+    }
+    document.getElementById("team").onclick = function() {
+        location.href = "./teams.html";
+    }
+    document.getElementById("new").onclick = function() {
+        location.href = "./newspage.html";
     }
 </script>
 
