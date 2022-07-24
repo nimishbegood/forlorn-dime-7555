@@ -129,7 +129,7 @@
     
     #newsblock {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-betweens;
         background-color: white;
         /* border: 1px solid teal; */
         padding: 5px;
@@ -138,9 +138,12 @@
     
     #newsblock>div:last-child {
         /* border: 1px solid teal; */
-        margin-left: 10px;
+        /* margin-left: 10px; */
         background-color: white;
-        /* padding: 4px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
     }
     
     #time {
